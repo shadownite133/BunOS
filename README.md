@@ -4,3 +4,5 @@ BunOS is a Ubuntu 22.04-based OS for amd64 Computers, done as a side project lit
 # My Inspiration
 BunOS is named for my catto, Loki, whom I nicknamed Bun because he looks like a hamburger bun when curled up.
 [Loki](./images/Loki.jpg)
+# Installation
+[How to Install](./INSTALLATION.md)
