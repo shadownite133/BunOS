@@ -1,5 +1,5 @@
 Open GNOME Extensions app in the app menu (the bar somewhere on the screen), looks like a blue puzzle piece.
 Install ArcMenu, Dash to Dock, OpenWeather, and User Themes
 Customize as needed, feel free to explore
-For the full BunOS experience download the official wallpaper! :)
+For the full BunOS experience download the official wallpaper and choose the yaru-blue theme in user themes! :)
 https://github.com/KirbyJeff/BunOS/images/BunOS - Desktop.png
