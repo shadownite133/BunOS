@@ -1,0 +1,5 @@
+Open GNOME Extensions app in the app menu (left app bar)
+Install ArcMenu, Dash to Dock, OpenWeather, and User Themes
+Customize as needed, feel free to explore
+For the full BunOS experience download the official wallpaper! :)
+https://github.com/KirbyJeff/BunOS
