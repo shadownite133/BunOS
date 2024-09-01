@@ -1,4 +1,5 @@
 # How to install
+# After reading this boot the computer and follow the instructions in [setup.txt](setup.txt)
 # Requirements
 * 7-Zip (Both)
 * Rufus (Bare Metal ONLY)
