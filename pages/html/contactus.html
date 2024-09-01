@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BunOS - Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .main-content {
+            padding: 20px 0;
+        }
+        .main-content h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .contact-info {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .contact-info h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        .contact-info p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .contact-form {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 15px 20px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background: #0056b3;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>BunOS</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="main-content">
+            <h2>Contact Us</h2>
+
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>If you have any questions, feedback, or need support, feel free to reach out to us using the contact details below:</p>
+                <p><strong>Email:</strong> <a href="mailto:Shadownite0130@gmail.com">Shadownite0130@gmail.com</a></p>
+                <p><strong>Reddit:</strong> <a href="https://www.reddit.com/u/KirbyJeef" target="_blank">u/KirbyJeef</a></p>
+            </div>
+
+            <div class="contact-form">
+                <h3>Contact Form</h3>
+                <form action="mailto:Shadownite0130@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 KirbyJeff. All rights reserved. | <a href="#contact" style="color: #fff;">Contact Us</a></p>
+    </footer>
+</body>
+</html>
