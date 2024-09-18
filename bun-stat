@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Set static OS information
+OS_NAME="BunOS 22.04v1 \"Loki\""
+HOSTNAME=$(hostname)
+UPTIME=$(uptime -p)
+KERNEL=$(uname -r)
+CPU=$(grep -m 1 'model name' /proc/cpuinfo | cut -d ':' -f 2 | xargs)
+RAM=$(free -h | awk '/^Mem:/ {print $2}')
+DISK=$(df -h / | awk 'NR==2 {print $2}')
+USER=$(whoami)
+
+# Display system information
+echo "      /     .-+sssooossssooosss+-.    \ "
+echo "     /   :+sssssssssssssssssssssso:    \ "
+echo "    / -+sssssssssssssssssssssssssssss+- \ "
+echo "   /.osssssssssssssssssssssssssssssssssss\ "
+echo "  /sssssssssssssssssssssssssssssssssssssss\ "
+echo " /sssssssssssssssssssssssssssssssssssssssss\ "
+echo "   OS: $OS_NAME"
+echo "   Hostname: $HOSTNAME"
+echo "   Uptime: $UPTIME"
+echo "   Kernel: $KERNEL"
+echo "   CPU: $CPU"
+echo "   RAM: $RAM"
+echo "   Disk: $DISK"
+echo "   User: $USER"
+echo " \sssssssssssssssssssssssssssssssssssssssss/"
+echo "  \sssssssssssssssssssssssssssssssssssssss/"
+echo "   \ossssssssssssssssssssssssssssssssssso/"
+echo "    \ -+ssssssssssssssssssssssssssssss+-/"
+echo "      \ :+sssssssssssssssssssssssssso: /"
+echo "       \    .-+sssooossssooosss+-.    /"
+

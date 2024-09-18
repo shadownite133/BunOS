@@ -1,0 +1,63 @@
+#!/bin/bash
+
+# Define log file
+LOG_FILE="/var/log/bunOS_update.log"
+
+# Function to check and install zenity
+install_zenity() {
+    if ! command -v zenity &> /dev/null; then
+        echo "Zenity is not installed. Installing now..."
+        echo "$USER" | sudo -S apt install zenity -y >> "$LOG_FILE" 2>&1
+        if [[ $? -ne 0 ]]; then
+            zenity --error --text="Failed to install Zenity. Please install it manually." --title="Error"
+            exit 1
+        fi
+        zenity --info --text="Zenity installed successfully." --title="Success"
+    fi
+}
+
+# Function to check for sudo privileges
+check_sudo() {
+    if ! zenity --question --text="This script requires superuser privileges. Do you want to proceed?" --title="Sudo Required"; then
+        zenity --info --text="Update process cancelled." --title="Cancelled"
+        exit 1
+    fi
+}
+
+# Function to perform updates
+perform_updates() {
+    echo "Updating package lists..." | tee -a "$LOG_FILE"
+    echo "$USER" | sudo -S apt update >> "$LOG_FILE" 2>&1
+
+    UPGRADABLE=$(apt list --upgradable 2>/dev/null | wc -l)
+
+    if [ "$UPGRADABLE" -gt 1 ]; then
+        echo "Upgradable packages found: $((UPGRADABLE - 1))" | tee -a "$LOG_FILE"
+
+        # Start the upgrade process with a progress bar
+        (
+            echo "10" 
+            echo "$USER" | sudo -S apt full-upgrade -y 2>&1 | while read line; do
+                # Capture progress
+                if [[ "$line" =~ ([0-9]+)% ]]; then
+                    echo "${BASH_REMATCH[1]}"
+                fi
+            done
+            echo "100"
+        ) | zenity --progress --title="Updating System" --text="Upgrading packages..." --percentage=0 --auto-close
+
+        # Clean up
+        echo "Cleaning up..." | tee -a "$LOG_FILE"
+        echo "$USER" | sudo -S apt autoremove -y >> "$LOG_FILE" 2>&1
+        echo "$USER" | sudo -S apt clean >> "$LOG_FILE" 2>&1
+
+        zenity --info --text="Updates completed successfully." --title="Success"
+    else
+        zenity --info --text="No upgradable packages found." --title="No Updates"
+    fi
+}
+
+# Main execution
+install_zenity
+check_sudo
+perform_updates
