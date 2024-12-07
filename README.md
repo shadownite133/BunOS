@@ -1,6 +1,6 @@
 # BunOS
 > [!WARNING]
-> Use bun-stat instead of modified neofetch script
+> Use bun-stat instead of modified neofetch script, place in /usr/bin and call using "bun-stat"
 ## This is the official BunOS Linux Distro Repo, hosting the ISO and Installation guides and resources
 BunOS is a Ubuntu-derived OS for amd64 Computers, done as a side project literally in 2 weeks total, I did this to expand my knowledge of linux.
 # My Inspiration
