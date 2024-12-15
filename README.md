@@ -2,15 +2,14 @@
 > [!WARNING]
 > Use bun-stat instead of modified neofetch script, place in /usr/bin and call using "bun-stat"
 ## This is the official BunOS Linux Distro Repo, hosting the ISO and Installation guides and resources
-BunOS is a Ubuntu-derived OS for amd64 Computers, done as a side project literally in 2 weeks total, I did this to expand my knowledge of linux.
+BunOS is a Ubuntu-derived OS for amd64 Computers.
 # My Inspiration
 BunOS is named for my catto, Loki, whom I nicknamed Bun because he looks like a hamburger bun when curled up.
 [Here is Loki](./images/Loki.jpg)
 # Installation
-## I apologize but it is unable to be built, you have to download the binary.
+## I apologize but it is unable to be built, you have to download the binary. Or you can install a fresh ubuntu install and follow setup.txt's instructions.
 [How to Install](./INSTALLATION.md)
 # System Reqs
-## BunOS "Loki" (Ubuntu 22.04 LTS "Jammy Jellyfish")
 ### Minimum Recommended System Requirements
 * 2 GHz Dual-Core Processor
 * 4 GB RAM (Bare-Metal)
