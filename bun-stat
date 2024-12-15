@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set static OS information
-OS_NAME="BunOS 22.04v1 \"Loki\""
+OS_NAME=$(grep -E '^(PRETTY_NAME)=' /etc/os-release)
 HOSTNAME=$(hostname)
 UPTIME=$(uptime -p)
 KERNEL=$(uname -r)
