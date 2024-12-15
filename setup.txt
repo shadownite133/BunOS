@@ -1,53 +1,34 @@
 Open GNOME Extensions app in the app menu (the bar somewhere on the screen), looks like a blue puzzle piece.
 Install ArcMenu, Dash to Dock, OpenWeather, and User Themes
-In the terminal use "sudo apt install neofetch nautilus-admin"
-When that finishes open file manager and navigate to "other locations/Computer/usr" and open "bin" folder by right clicking on it and clicking open as administrator
-Then go to firefox and go to github.com/KirbyJeff/BunOS/ and download "neofetch" and "ascii-art.txt" go to your desktop and double click "Home" folder and open "downloads" drag "neofetch" into "/usr/bin" you opened earlier.
-Then open terminal and execute this: "cd ~ && sudo nano .bashrc"
-add this to bottom of text file that opens in terminal "alias bun-stat='neofetch --ascii /path/to/your/ascii-art.txt'" keeping '' and not keeping ""
-press Ctrl+O and press enter, and then do Ctrl+X to exit.
-in the terminal run "bash" and press enter and then run "bun-stat" it should show this:
 
-                                                      .............
-                                                 .....@@@..@@@..@@@@....
-                                              ...@@@@@@@...@@@@.@@@@@@@@...
-                                            ..@@@@@.....@@............@@@@@..
-                                          ...@.....@@@@@@@@@.@@@@@@@@@.....@@..
-                                        ...@@@@..@@@@@@@@@@@.@@@@@@@@@@@..@@@@...
-                                       ..@..@@@..@@@@@@@@@@@.@@@@@@@@@@@@.@@@..@..
-                                      .@@@@......@@@@@@@@@@@.@@@@@@@@@@@......@@@@.
-                                     .@@@..@@@@@@..@@@@@@.......@@@@@@..@@@@@@..@@@.
-                                    ..@@...@@@@@@@@..@....@@@@@....@..@@@@@@@@@.@@@..
-                                    .@@@..@@@@@@@@@@...@@@@@@@@@@@...@@@@@@@@@@..@@@.
-                                   ..@@..@@@@@@@@@@..@@.....@@@@@@@@..@@@@@@@@@@..@@..
-                                   ......@@@@@@@@@..@@......@@@@@@@@@..@@@@@@@@@......
-                                   ..@@@..@@@@@@@@..@@......@@@@@@@@@..@@@@@@@@..@@@..
-                                   ..@@@............@@@@@@@@@@@@@@@@@............@@@..
-                                   ......@@@@@@@@@..@@@@@@@@@@@@@@@@@..@@@@@@@@@......
-                                   ..@@..@@@@@@@@@@..@@@@@@@@@@@@@@@..@@@@@@@@@@..@@..
-                                    .@@@..@@@@@@@@@@..@@@@@@@@@@@@@..@@@@@@@@@@..@@@..
-                                    ..@@..@@@@@@@@@......@@@@@@@......@@@@@@@@@..@@..
-                                     .@@@..@@@@@@...@@@@.........@@@@...@@@@@@..@@@.
-                                      .@@@...@@@..@@@@@@@@@@.@@@@@@@@@@..@@@@..@@@.
-                                       .@@......@@@@@@@@@@@@.@@@@@@@@@@@@..@...@@.
-                                        ...@@@@..@@@@@@@@@@@.@@@@@@@@@@@..@@@@...
-                                         ...@@@...@@@@@@@@@@.@@@@@@@@@@...@@@...
-                                           ....@@@....@@@@.....@@@@....@@@....                                            
-                                             ...@@@@@@.....@@@.....@@@@@@...
-                                                ....@@@@@..@@@@.@@@@@....
-                                                    ................
-                                   @@@
-                                   @@@
-                                   @@@
-                                   @@@@@@@@   @@@    @@  @@@@@@@@    @@@@@@@@   @@@@@@@
-                                   @@@   @@@@ @@@   @@@  @@@   @@@  @@@    @@@ @@@
-                                   @@     @@@ @@@   @@@  @@@    @@. @@     @@@  @@@@@@
-                                   @@@    @@@ @@@   @@@  @@@    @@@ @@@    @@@      @@@
-                                    @@@@@@@@   @@@@@@@@  @@@    @@@  @@@@@@@@  @@@@@@@@
-                                      @@@        @@             @@      @@        @@
+Note: Anything with a $ before it is a variable and shouldn't be messed with or changed.
+Then go to firefox and go to github.com/KirbyJeff/BunOS/ and download "bun-stat"
+Then open a terminal and type the following: "sudo cp /home/$USER/Downloads/bun-stat /usr/bin" and press enter.
+in the terminal run "bun-stat" it should show this:
+
+      /     .-+sssooossssooosss+-.    \ "
+     /   :+sssssssssssssssssssssso:    \ "
+    / -+sssssssssssssssssssssssssssss+- \ "
+   /.osssssssssssssssssssssssssssssssssss\ "
+  /sssssssssssssssssssssssssssssssssssssss\ "
+ /sssssssssssssssssssssssssssssssssssssssss\ "
+   OS: $OS_NAME"
+   Hostname: $HOSTNAME"
+   Uptime: $UPTIME"
+   Kernel: $KERNEL"
+   CPU: $CPU"
+   RAM: $RAM"
+   Disk: $DISK"
+   User: $USER"
+ \sssssssssssssssssssssssssssssssssssssssss/"
+  \sssssssssssssssssssssssssssssssssssssss/"
+   \ossssssssssssssssssssssssssssssssssso/"
+    \ -+ssssssssssssssssssssssssssssss+-/"
+      \ :+sssssssssssssssssssssssssso: /"
+       \    .-+sssooossssooosss+-.    /"
 
 along with your system information such as cpu gpu and ram, as well as OS which if you followed correctly, should be BunOS 22.04v1 Loki
 You should be done now!
 Customize as needed, feel free to explore
 For the full BunOS experience download the official wallpaper and choose the yaru-blue theme in user themes! :)
-https://github.com/KirbyJeff/BunOS/images/BunOS - Desktop.png
+https://github.com/KirbyJeff/BunOS/images/
